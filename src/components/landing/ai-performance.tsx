@@ -197,8 +197,8 @@ export function AiPerformance() {
           </div>
         </AnimatedReveal>
 
-        {/* Radial stats row */}
-        <div className="mt-10 flex flex-wrap items-center justify-center gap-8 sm:gap-12">
+        {/* Radial stats — 2x2 on mobile, single row on desktop */}
+        <div className="mt-10 flex flex-wrap justify-center gap-8 sm:gap-12">
           <RadialStat value={95} label="Win Rate" color="hsl(142 70% 45%)" delay={0} />
           <RadialStat value={89} label="Sentiment Accuracy" color="hsl(25 95% 50%)" delay={0.1} />
           <RadialStat value={97} label="Uptime SLA" color="hsl(217 91% 60%)" delay={0.2} />

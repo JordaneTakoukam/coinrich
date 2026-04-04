@@ -21,7 +21,7 @@ export function ContactSection() {
 
         <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {/* Contact Form */}
-          <AnimatedReveal direction="left">
+          <AnimatedReveal>
             <div className="rounded-xl border border-border bg-card p-6 md:p-8">
               <div className="space-y-4">
                 <div>

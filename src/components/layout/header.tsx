@@ -48,7 +48,6 @@ export function Header() {
     const el = document.getElementById(id);
     if (el) {
       el.scrollIntoView({ behavior: "smooth" });
-      // Update URL hash without jump
       window.history.pushState(null, "", `#${id}`);
     }
   };
@@ -56,57 +55,62 @@ export function Header() {
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 border-b transition-all duration-300",
+        "fixed top-0 left-0 right-0 z-50 border-b transition-all duration-500",
         scrolled
-          ? "bg-background/90 backdrop-blur-xl border-border shadow-sm shadow-black/5"
-          : "bg-transparent backdrop-blur-sm border-transparent"
+          ? "bg-background/95 backdrop-blur-xl border-border/80 shadow-lg shadow-black/10"
+          : "bg-background/40 backdrop-blur-sm border-transparent"
       )}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between h-16 px-4 sm:px-6 lg:px-8">
-        {/* Logo */}
+        {/* Logo — always visible with app name */}
         <button
           type="button"
           onClick={() => {
             window.scrollTo({ top: 0, behavior: "smooth" });
             window.history.pushState(null, "", window.location.pathname);
           }}
-          className="flex items-center gap-2.5 cursor-pointer group"
+          className="flex items-center gap-2 cursor-pointer group shrink-0"
         >
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
-            <Sparkles className="h-4.5 w-4.5 text-primary" />
+          <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors">
+            <Sparkles className="h-5 w-5 text-primary" />
           </div>
-          <span className="text-lg font-bold text-foreground hidden sm:block">
+          <span className="text-base sm:text-lg font-bold bg-gradient-to-r from-primary to-amber-500 bg-clip-text text-transparent">
             AI Crypto Tracker
           </span>
         </button>
 
-        {/* Desktop Navigation — real <a> links with #hash */}
-        <nav className="hidden lg:flex items-center">
-          <div className="flex items-center rounded-full border border-border/40 bg-secondary/20 backdrop-blur-sm px-1 py-1">
-            {navLinks.map((link) => (
-              <a
-                key={link.id}
-                href={`#${link.id}`}
-                onClick={(e) => handleNavClick(e, link.id)}
-                className={cn(
-                  "relative rounded-full px-4 py-1.5 text-sm font-medium transition-all duration-200",
-                  activeSection === link.id
-                    ? "text-primary-foreground bg-primary shadow-sm"
-                    : "text-muted-foreground hover:text-foreground"
-                )}
-              >
-                {t(link.key)}
-              </a>
-            ))}
-          </div>
+        {/* Desktop Navigation — inline links (no pill container) */}
+        <nav className="hidden lg:flex items-center gap-1">
+          {navLinks.map((link) => (
+            <a
+              key={link.id}
+              href={`#${link.id}`}
+              onClick={(e) => handleNavClick(e, link.id)}
+              className={cn(
+                "relative px-3 py-1.5 text-sm font-medium rounded-lg transition-all duration-200",
+                activeSection === link.id
+                  ? "text-primary"
+                  : "text-muted-foreground hover:text-foreground hover:bg-secondary/30"
+              )}
+            >
+              {t(link.key)}
+              {activeSection === link.id && (
+                <span className="absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 w-4 rounded-full bg-primary" />
+              )}
+            </a>
+          ))}
         </nav>
 
         {/* Desktop Actions */}
-        <div className="hidden lg:flex items-center gap-2">
+        <div className="hidden lg:flex items-center gap-2 shrink-0">
           <LanguageSwitcher />
 
           <Link href="/auth?mode=login">
-            <Button variant="ghost" size="sm" className="group gap-1.5 text-primary font-semibold hover:text-primary hover:bg-primary/5 transition-all duration-300">
+            <Button
+              variant="ghost"
+              size="sm"
+              className="group gap-1.5 text-primary font-semibold hover:text-primary hover:bg-primary/5 transition-all duration-300"
+            >
               <LogIn className="h-3.5 w-3.5 transition-transform duration-300 group-hover:-translate-x-0.5" />
               {t("login")}
             </Button>
@@ -123,15 +127,15 @@ export function Header() {
           </Link>
         </div>
 
-        {/* Mobile Hamburger */}
+        {/* Mobile: hamburger */}
         <Button
           variant="ghost"
           size="icon"
-          className="lg:hidden"
+          className="lg:hidden shrink-0 h-12 w-12"
           onClick={() => setMobileNavOpen(true)}
           aria-label="Open menu"
         >
-          <Menu className="h-5 w-5" />
+          <Menu className="h-7 w-7" />
         </Button>
       </div>
 

@@ -161,7 +161,7 @@ export function AiShowcase() {
         <div className="mx-auto mt-12 max-w-6xl">
           {/* Tab pills with icons */}
           <div className="flex justify-center mb-10">
-            <div className="inline-flex items-center rounded-full border border-border/40 bg-secondary/20 backdrop-blur-sm p-1 gap-1">
+            <div className="inline-flex items-center rounded-full border border-border/40 bg-secondary/20 backdrop-blur-sm p-1 gap-1 mx-4 sm:mx-0">
               {tabConfig.map((tab) => {
                 const Icon = tab.icon;
                 return (

@@ -3,7 +3,6 @@
 import { useTranslations } from "next-intl";
 import { Sparkles, Twitter, Github, MessageCircle, Send } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
-import { LanguageSwitcher } from "@/components/shared/language-switcher";
 
 const socialLinks = [
   { icon: Twitter, label: "Twitter", href: "#" },
@@ -75,7 +74,6 @@ export function Footer() {
                 </a>
               ))}
             </div>
-            <LanguageSwitcher />
           </div>
 
           {/* Product */}

@@ -32,14 +32,14 @@ function LiveStatCard({ value, label, icon: Icon, delay }: { value: string; labe
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ delay, duration: 0.5 }}
-      className="flex items-center gap-3 rounded-xl border border-border/50 bg-card/50 backdrop-blur-sm px-4 py-3"
+      className="flex flex-col items-center gap-2 rounded-xl border border-border/50 bg-card/50 backdrop-blur-sm px-2 py-3 sm:flex-row sm:gap-3 sm:px-4"
     >
-      <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
-        <Icon className="h-5 w-5 text-primary" />
+      <div className="flex h-8 w-8 sm:h-10 sm:w-10 items-center justify-center rounded-lg bg-primary/10 shrink-0">
+        <Icon className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
       </div>
-      <div>
-        <p className="font-mono text-lg font-bold text-foreground">{value}</p>
-        <p className="text-xs text-muted-foreground">{label}</p>
+      <div className="text-center sm:text-left">
+        <p className="font-mono text-sm sm:text-lg font-bold text-foreground">{value}</p>
+        <p className="text-[10px] sm:text-xs text-muted-foreground leading-tight">{label}</p>
       </div>
     </motion.div>
   );
@@ -49,7 +49,7 @@ export function HeroSection() {
   const t = useTranslations("hero");
 
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-16">
+    <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-20">
       {/* Animated background */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-primary/5" />
       <div className="dot-pattern absolute inset-0 opacity-40" />
@@ -148,10 +148,10 @@ export function HeroSection() {
           </Button>
         </motion.div>
 
-        {/* Live stats bar */}
+        {/* Live stats bar — always single row */}
         <motion.div
           variants={itemVariants}
-          className="mt-12 flex flex-wrap items-center justify-center gap-4"
+          className="mt-12 grid grid-cols-3 gap-3 max-w-2xl mx-auto"
         >
           <LiveStatCard value={t("liveStats.trades")} label={t("liveStats.tradesLabel")} icon={Activity} delay={0.8} />
           <LiveStatCard value={t("liveStats.profit")} label={t("liveStats.profitLabel")} icon={TrendingUp} delay={1.0} />
