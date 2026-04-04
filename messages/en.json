@@ -1,0 +1,391 @@
+{
+  "meta": {
+    "title": "AI Crypto Tracker — AI-Powered Crypto Trading Platform",
+    "description": "Trade smarter with AI. Our platform analyzes markets 24/7, executes precision trades, and maximizes your portfolio performance."
+  },
+  "nav": {
+    "features": "Features",
+    "howItWorks": "How It Works",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "login": "Log In",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "badge": "Next-Gen AI Trading Platform",
+    "title": "The Future of",
+    "titleHighlight": "Crypto Trading is Here",
+    "subtitle": "Harness the power of artificial intelligence to analyze market trends in real-time, predict price movements with 94.7% accuracy, and execute profitable trades automatically — 24 hours a day, 7 days a week.",
+    "cta": "Start Trading Free",
+    "ctaSecondary": "See How It Works",
+    "trustText": "Trusted by 50,000+ traders worldwide",
+    "onlineStatus": "Tuffy AI — Online & Ready",
+    "liveStats": {
+      "trades": "2.4M+",
+      "tradesLabel": "Trades Executed Today",
+      "profit": "+12.4%",
+      "profitLabel": "Avg. Monthly Return",
+      "uptime": "99.99%",
+      "uptimeLabel": "Platform Uptime"
+    }
+  },
+  "trustedBy": {
+    "badge": "Exchange Partners",
+    "title": "Integrated with the World's Leading Exchanges",
+    "exchanges": "Binance,Coinbase,Kraken,Bybit,OKX,KuCoin,Gate.io,Bitget"
+  },
+  "features": {
+    "badge": "Core Features",
+    "title": "Advanced Trading Intelligence",
+    "subtitle": "Experience the future of crypto trading with our AI-powered analysis engine",
+    "items": {
+      "aiAnalysis": {
+        "title": "AI Market Analysis",
+        "description": "Neural networks analyze 300+ cryptos in real-time, identifying patterns and predicting price movements with 94.7% accuracy.",
+        "highlight": "94.7% accuracy"
+      },
+      "automatedBots": {
+        "title": "Automated Trading Bots",
+        "description": "Deploy grid, DCA, scalping or arbitrage bots that execute 24/7 — fully configurable to match your strategy.",
+        "highlight": "24/7 execution"
+      },
+      "riskManagement": {
+        "title": "Risk Management",
+        "description": "Automated stop-loss, dynamic position sizing, and portfolio-level hedging to protect your capital.",
+        "highlight": "Max 2% drawdown"
+      },
+      "signals": {
+        "title": "Real-time Signals",
+        "description": "Instant alerts with confidence scores, entry/exit points, and risk-reward ratios via push, email, or Telegram.",
+        "highlight": "< 50ms latency"
+      },
+      "portfolio": {
+        "title": "Portfolio Tracking",
+        "description": "Unified dashboard across all exchanges with real-time P&L, performance analytics, and tax report exports.",
+        "highlight": "300+ assets tracked"
+      },
+      "multiExchange": {
+        "title": "Multi-Exchange Support",
+        "description": "Connect 150+ exchanges with unified order books, cross-exchange arbitrage, and consolidated reporting.",
+        "highlight": "150+ exchanges"
+      }
+    }
+  },
+  "howItWorks": {
+    "badge": "Getting Started",
+    "title": "Start Trading in 3 Simple Steps",
+    "subtitle": "Go from sign-up to live AI trading in under 5 minutes",
+    "steps": {
+      "step1": {
+        "title": "Create Your Account",
+        "description": "Sign up in seconds and connect your preferred cryptocurrency exchange securely via API keys."
+      },
+      "step2": {
+        "title": "Configure Your AI",
+        "description": "Choose your trading strategy, set risk parameters, and customize the AI to match your investment goals."
+      },
+      "step3": {
+        "title": "Start Earning",
+        "description": "Sit back as Tuffy AI analyzes markets, identifies opportunities, and executes trades on your behalf."
+      }
+    }
+  },
+  "stats": {
+    "volume": "$4.8B+",
+    "volumeLabel": "Total Volume Traded",
+    "traders": "50K+",
+    "tradersLabel": "Active Traders Worldwide",
+    "uptime": "99.99%",
+    "uptimeLabel": "Platform Uptime",
+    "coins": "300+",
+    "coinsLabel": "Cryptocurrencies Tracked"
+  },
+  "aiShowcase": {
+    "badge": "Platform Preview",
+    "title": "See AI Trading in Action",
+    "subtitle": "Watch how Tuffy AI processes market data and makes intelligent trading decisions",
+    "tabs": {
+      "analysis": "Analysis",
+      "signals": "Signals",
+      "automation": "Automation"
+    },
+    "analysis": {
+      "title": "Real-time Market Analysis",
+      "description": "Our neural networks process millions of data points per second, identifying patterns invisible to the human eye. Get deep market insights powered by advanced technical and fundamental analysis.",
+      "indicators": "15+ Technical Indicators",
+      "accuracy": "94.7% Signal Accuracy",
+      "latency": "<50ms Processing Latency"
+    },
+    "signals": {
+      "title": "Smart Trading Signals",
+      "description": "Receive instant, actionable buy and sell signals backed by multi-factor AI analysis. Every signal includes confidence score, risk level, and suggested position size.",
+      "daily": "200+ Daily Signals",
+      "pairs": "500+ Trading Pairs",
+      "backtested": "Fully Backtested"
+    },
+    "automation": {
+      "title": "Hands-free Automation",
+      "description": "Set your strategy once and let the AI execute trades around the clock. Advanced risk management ensures your capital is always protected.",
+      "strategies": "Custom Strategies",
+      "execution": "24/7 Execution",
+      "protection": "Capital Protection"
+    }
+  },
+  "pricing": {
+    "badge": "Pricing Plans",
+    "title": "Choose Your Trading Edge",
+    "subtitle": "Flexible plans designed for every level of trader",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "yearlyDiscount": "Save 20%",
+    "popular": "Most Popular",
+    "cta": "Get Started",
+    "ctaPopular": "Start Free Trial",
+    "perMonth": "/month",
+    "perMonthYearly": "/month, billed yearly",
+    "plans": {
+      "starter": {
+        "name": "Starter",
+        "price": "$29",
+        "priceYearly": "$23",
+        "description": "Perfect for beginners exploring AI-powered trading",
+        "features": "1 Exchange Connection,Basic AI Signals,Portfolio Tracking,Email Support,5 Active Bots"
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "$79",
+        "priceYearly": "$63",
+        "description": "For serious traders who want the full AI advantage",
+        "features": "5 Exchange Connections,Advanced AI Signals,Priority Signals,24/7 Live Support,25 Active Bots,Risk Management Suite,Custom Strategies"
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "price": "$199",
+        "priceYearly": "$159",
+        "description": "Maximum power for professional trading operations",
+        "features": "Unlimited Exchanges,Premium AI Engine,Dedicated Account Manager,Phone Support,Unlimited Bots,Advanced Risk Management,API Access,Custom Integrations"
+      }
+    }
+  },
+  "testimonials": {
+    "badge": "What Traders Say",
+    "title": "Loved by Traders Worldwide",
+    "subtitle": "See why thousands of traders trust AI Crypto Tracker for their AI-powered trading",
+    "items": {
+      "t1": {
+        "name": "Alex Thompson",
+        "role": "Day Trader",
+        "quote": "AI Crypto Tracker completely changed how I approach crypto trading. The AI signals are incredibly accurate and the automated bots save me hours every day.",
+        "rating": "5"
+      },
+      "t2": {
+        "name": "Sarah Chen",
+        "role": "Portfolio Manager",
+        "quote": "The multi-exchange support and portfolio tracking are game changers. I can manage all my positions from one dashboard with real-time insights.",
+        "rating": "5"
+      },
+      "t3": {
+        "name": "Marcus Rivera",
+        "role": "Swing Trader",
+        "quote": "The risk management features alone are worth the subscription. I sleep better knowing the AI is protecting my positions 24/7.",
+        "rating": "5"
+      },
+      "t4": {
+        "name": "Elena Kowalski",
+        "role": "Crypto Investor",
+        "quote": "As someone new to crypto, the AI signals and automation made it possible for me to trade confidently from day one.",
+        "rating": "4"
+      },
+      "t5": {
+        "name": "James Okafor",
+        "role": "Algo Trader",
+        "quote": "The API access and custom strategy builder are top-notch. This is the most sophisticated retail crypto trading platform I've used.",
+        "rating": "5"
+      },
+      "t6": {
+        "name": "Mia Nakamura",
+        "role": "Full-time Trader",
+        "quote": "Switched from manual trading to AI Crypto Tracker six months ago. My consistency improved dramatically and I finally have a work-life balance.",
+        "rating": "5"
+      }
+    }
+  },
+  "faq": {
+    "badge": "FAQ",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about AI Crypto Tracker",
+    "items": {
+      "q1": {
+        "question": "How does the AI trading work?",
+        "answer": "Our AI uses advanced machine learning models trained on years of market data. It analyzes technical indicators, market sentiment, on-chain data, and news to identify high-probability trading opportunities and execute trades automatically."
+      },
+      "q2": {
+        "question": "Is my money safe?",
+        "answer": "Absolutely. AI Crypto Tracker never holds your funds — they stay on your exchange. We connect via read-and-trade API keys only. All connections are encrypted with bank-grade security, and we support 2FA for account protection."
+      },
+      "q3": {
+        "question": "What exchanges are supported?",
+        "answer": "We support 150+ exchanges including Binance, Coinbase, Kraken, Bybit, OKX, KuCoin, and many more. New exchanges are added regularly based on user demand."
+      },
+      "q4": {
+        "question": "What is the minimum investment?",
+        "answer": "There is no minimum investment required by AI Crypto Tracker. You can start trading with whatever amount you're comfortable with on your connected exchange. We recommend starting small while learning the platform."
+      },
+      "q5": {
+        "question": "How accurate are the AI predictions?",
+        "answer": "Our AI signals have a verified accuracy rate of 94.7% based on backtesting. However, past performance doesn't guarantee future results. We recommend using proper risk management and never investing more than you can afford to lose."
+      },
+      "q6": {
+        "question": "Can I cancel my subscription anytime?",
+        "answer": "Yes, you can cancel your subscription at any time with no hidden fees or penalties. Your access continues until the end of your billing period. We also offer a 14-day free trial on the Pro plan."
+      },
+      "q7": {
+        "question": "Do I need trading experience?",
+        "answer": "Not at all! AI Crypto Tracker is designed for traders of all levels. Our AI handles the complex analysis, and we provide educational resources, tutorials, and 24/7 support to help you get started."
+      },
+      "q8": {
+        "question": "What about fees and commissions?",
+        "answer": "AI Crypto Tracker charges a flat monthly subscription fee — no hidden commissions, no percentage of profits. Exchange trading fees still apply as charged by your exchange, but we optimize trade execution to minimize these costs."
+      }
+    }
+  },
+  "cta": {
+    "title": "Start Your AI Trading Journey Today",
+    "subtitle": "Join 50,000+ traders who have already transformed their crypto portfolio with AI-powered insights. No credit card required to start.",
+    "button": "Get Started for Free",
+    "note": "14-day free trial. No credit card required. Cancel anytime."
+  },
+  "contact": {
+    "badge": "Get in Touch",
+    "title": "Have Questions? Let's Talk",
+    "subtitle": "Our team of crypto experts is ready to help you get started. Reach out anytime.",
+    "email": "support@aicryptotracker.com",
+    "emailLabel": "Email Us",
+    "response": "We typically respond within 2 hours",
+    "social": "Follow Us",
+    "cta": "Send Message",
+    "namePlaceholder": "Your Name",
+    "emailPlaceholder": "your@email.com",
+    "messagePlaceholder": "How can we help you?"
+  },
+  "footer": {
+    "description": "AI-powered cryptocurrency trading platform. Analyze markets, predict trends, and trade smarter with Tuffy AI.",
+    "product": "Product",
+    "productLinks": {
+      "features": "Features",
+      "pricing": "Pricing",
+      "api": "API",
+      "changelog": "Changelog"
+    },
+    "company": "Company",
+    "companyLinks": {
+      "about": "About Us",
+      "blog": "Blog",
+      "careers": "Careers",
+      "contact": "Contact"
+    },
+    "legal": "Legal",
+    "legalLinks": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookie Policy",
+      "disclaimer": "Disclaimer"
+    },
+    "copyright": "\u00a9 2026 AI Crypto Tracker. All rights reserved.",
+    "madeBy": "Made by",
+    "madeByName": "Idriss Jordane"
+  },
+  "aiPerformance": {
+    "badge": "Live Performance",
+    "title": "AI Trading Performance Dashboard",
+    "subtitle": "Real-time metrics from our AI trading engine — transparent, verifiable, and consistently profitable"
+  },
+  "security": {
+    "badge": "Security & Trust",
+    "title": "Your Assets, Fully Protected",
+    "subtitle": "Enterprise-grade security infrastructure to keep your trading safe and your data private",
+    "items": {
+      "encryption": {
+        "title": "Bank-Grade Encryption",
+        "description": "All data is encrypted with AES-256 in transit and at rest. Your API keys are stored in hardware security modules."
+      },
+      "noFunds": {
+        "title": "We Never Hold Your Funds",
+        "description": "Your crypto stays on your exchange. We only connect via read-and-trade API keys — no withdrawal access."
+      },
+      "audit": {
+        "title": "Regular Security Audits",
+        "description": "Independent third-party penetration testing and security audits conducted quarterly."
+      },
+      "uptime": {
+        "title": "99.99% Uptime SLA",
+        "description": "Redundant infrastructure across multiple regions ensures your bots never miss a trade."
+      },
+      "twoFa": {
+        "title": "Two-Factor Authentication",
+        "description": "Mandatory 2FA with TOTP or hardware keys. IP whitelisting available for API access."
+      },
+      "compliance": {
+        "title": "Regulatory Compliance",
+        "description": "Fully compliant with global data protection regulations including GDPR and SOC 2 Type II."
+      }
+    }
+  },
+  "auth": {
+    "backToHome": "Back to home",
+    "login": "Log In",
+    "register": "Sign Up",
+    "loginTitle": "Welcome back",
+    "loginSubtitle": "Sign in to your AI Crypto Tracker account",
+    "registerTitle": "Create your account",
+    "registerSubtitle": "Start trading smarter with AI-powered insights",
+    "nameLabel": "Full Name",
+    "namePlaceholder": "John Doe",
+    "emailLabel": "Email",
+    "emailPlaceholder": "you@example.com",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "forgotPassword": "Forgot password?",
+    "loginButton": "Sign In",
+    "registerButton": "Create Account",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "registerLink": "Sign up",
+    "loginLink": "Sign in",
+    "orEmail": "or continue with email",
+    "benefit1": "AI-powered signals with 94.7% accuracy",
+    "benefit2": "Bank-grade security — we never hold your funds",
+    "benefit3": "24/7 automated trading across 300+ cryptos"
+  },
+  "cookies": {
+    "title": "Cookie Preferences",
+    "privacy": "Your privacy matters",
+    "description": "We use cookies to enhance your trading experience, analyze platform usage, and deliver personalized content. You can customize your preferences below.",
+    "acceptAll": "Accept All",
+    "essentialOnly": "Essential Only",
+    "showDetails": "Details",
+    "hideDetails": "Hide",
+    "required": "Required",
+    "optional": "Optional",
+    "types": {
+      "essential": {
+        "title": "Essential",
+        "desc": "Authentication, security, and core platform functionality"
+      },
+      "analytics": {
+        "title": "Analytics",
+        "desc": "Usage data to improve platform performance"
+      },
+      "marketing": {
+        "title": "Marketing",
+        "desc": "Personalized content and targeted promotions"
+      }
+    }
+  },
+  "languageSwitcher": {
+    "label": "Language",
+    "en": "English",
+    "sr": "Srpski"
+  }
+}

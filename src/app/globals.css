@@ -1,0 +1,107 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+
+  --color-success: hsl(var(--success));
+  --color-warning: hsl(var(--warning));
+  --color-chart-up: hsl(var(--chart-up));
+  --color-chart-down: hsl(var(--chart-down));
+
+  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), "Fira Code", monospace;
+
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+}
+
+@keyframes accordion-down {
+  from { height: 0; }
+  to { height: var(--radix-accordion-content-height); }
+}
+
+@keyframes accordion-up {
+  from { height: var(--radix-accordion-content-height); }
+  to { height: 0; }
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: 20 14% 4%;
+  --foreground: 36 15% 90%;
+  --card: 20 14% 7%;
+  --card-foreground: 36 15% 90%;
+  --popover: 20 14% 7%;
+  --popover-foreground: 36 15% 90%;
+  --primary: 25 95% 50%;
+  --primary-foreground: 20 14% 4%;
+  --secondary: 20 14% 12%;
+  --secondary-foreground: 36 15% 85%;
+  --muted: 20 10% 15%;
+  --muted-foreground: 20 10% 55%;
+  --accent: 30 90% 45%;
+  --accent-foreground: 36 15% 95%;
+  --border: 20 15% 15%;
+  --input: 20 15% 15%;
+  --ring: 25 95% 50%;
+  --destructive: 0 85% 55%;
+  --success: 142 70% 45%;
+  --warning: 38 92% 50%;
+  --chart-up: 142 70% 45%;
+  --chart-down: 0 85% 55%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(20 14% 7%);
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(25 95% 50% / 0.5);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(25 95% 50% / 0.7);
+}
+
+/* Dot pattern background for hero */
+.dot-pattern {
+  background-image: radial-gradient(circle, hsl(25 95% 50% / 0.07) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
